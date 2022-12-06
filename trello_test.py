@@ -15,6 +15,6 @@ new_card = trello.create_card2("new_name", get_card_id)
 
 print(new_card)
 time.sleep(3)
-#del_card = trello.delete_card_action(new_card)
+del_card = trello.delete_card_action(new_card)
 
 trello.delete_board_action(new_board)
