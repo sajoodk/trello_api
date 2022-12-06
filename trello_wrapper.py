@@ -54,16 +54,16 @@ class trello_wrapper:
                 card_id = new_card.json()["id"]
                 return card_id
 
-	def delete_card(self, card_id):
+	#def delete_card_action(self, card_id):
 		#query = {
 		#"id": card_id}
-		del_card = requests.request("DELETE", self.delete_card.format(card_id), headers=headers, params= self.query)             
+	#	del_card = requests.request("DELETE", self.delete_card.format(card_id), headers=headers, params= self.query)             
 
-#	def delete_board(data1):
+#	def delete_board_action(self, data1):
     		#url = "https://api.trello.com/1/boards/{}"
 #    #querystring = {"key": key, "token": token}
  #   		response5 = requests.request("DELETE", self.delete_board.format(data1), params= self.query)
-	def delete_board(self, data1):
+	def delete_board_action(self, data1):
     #url = "https://api.trello.com/1/boards/{}"
     #querystring = {"key": key, "token": token}
                 response5 = requests.request("DELETE", self.delete_board.format(data1), params= self.query)
