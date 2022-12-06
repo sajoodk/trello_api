@@ -11,7 +11,7 @@ Instructions
 
 - Clone this repo to your local machine.
 - Trello API Key and Token are included in the script so that it runs out of the box.
-- Open Trello (web) [https://trello.com/u/sajoodk/boards] or this invite for new members [https://trello.com/invite/userworkspace39805549/ATTIf19e2412d1abdba250b13c800515aa8d93883973] to see the execution.
+- Open Trello (web) [https://trello.com/u/sajoodk/boards] or this invite for my public workspace [https://trello.com/invite/userworkspace39805549/ATTIf19e2412d1abdba250b13c800515aa8d93883973] to see the execution.
 - Run "trello_test.py" from the repo.
 - "trello_test.py" has 4 test cases 
 Testcase 1:Create Trello Board
