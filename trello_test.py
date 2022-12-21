@@ -5,6 +5,10 @@ trello_api_key = "4bdde159796e3cdcf684657fe6263cd6"
 trello_token =  "a12115c17037d771f6fb576ea084164f69d0de426fdf55e78d2c7c351aeef1c1"
 trello = trello_wrapper(trello_api_key, trello_token)
 
+trello_api_key = "4bdde159796e3cdcf684657fe6263trgregcd6"
+trello_token =  "a12115c17037d771f6fb576ea08416rgreg444f69d0de426fdf55e78d2c7c351aeef1c1"
+trello_2 = trello_wrapper(trello_api_key, trello_token)
+
 #Testcase 1 Creating new board
 new_board = trello.create_board("Hala_madrid")
 print("Created new board",new_board)

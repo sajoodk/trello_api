@@ -26,6 +26,8 @@ class trello_wrapper:
 			headers = self.headers,
 			params = {**self.query, **additional_query}
 			)
+                #need to assert http status code
+		# assert response.status_code == 204
 		data1 = new_board.json()['id'][0:]
 		#return new_board.json()
 		return data1
@@ -36,8 +38,8 @@ class trello_wrapper:
 		headers = self.headers,
 		params = self.query
 		)
-		#idl = [i for i in idlist[0]['id']]		
-		#return idlist.json()
+		#need to assert http status code
+		# assert response.status_code == 200
 		data2 = idlist.json()[0]['id']
 		return data2
 	def create_card2(self, card_name, data2):
@@ -51,6 +53,8 @@ class trello_wrapper:
                                             params = {**self.query, **add_query}
                                 )
 
+                #need to assert http status code
+		# assert response.status_code == 204        
                 card_id = new_card.json()["id"]
                 return card_id
 
@@ -66,4 +70,5 @@ class trello_wrapper:
     #url = "https://api.trello.com/1/boards/{}"
     #querystring = {"key": key, "token": token}
                 response5 = requests.request("DELETE", self.delete_board.format(data1), params= self.query)
- 
+                #need to assert http status code
+		# assert response.status_code == 204
